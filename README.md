@@ -17,7 +17,6 @@ We will use open source CTPelvic1K Dataset dataset for non-metal images and Clin
 5. Generate the metal artifact images by adding the metal only images to the non-metal images and following the metal simulation process in Yanbo Zhang and Hengyong Yu, 2018.
 
 # Example images
-# organise in 1x4 grid
 
 <table style="border-collapse: collapse; padding: 0; margin: 0;">
   <tr>
