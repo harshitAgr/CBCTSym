@@ -1,0 +1,31 @@
+# Geometry parameters
+DSD: 700  # Distance Source Detector      (mm)
+DSO: 410  # Distance Source Origin       (mm)
+detector_size_px: [512, 512]  # Detector size in pixels (rows, cols)
+detector_pixel_size: [0.8, 0.8]  # Detector pixel size (mm)
+image_size_mm: [140, 204.8, 204.8] # Image size (z, x, y) (mm)
+image_offset_mm : [0, 0, 0] # offset of the image (z, x, y) (mm)
+offset_detector_mm: [0, 0]  # offset of the detector (x, y) (mm)
+mode: 'cone' # Acquisition mode
+angle_step: 1.0  # Angle step (degrees)
+n_angles: 360  # Number of angles
+
+# Simulation parameters
+water_threshold: 1100  # in HU
+bone_threshold: 2500  # in HU
+metal_threshold: 4000  # in HU
+metal_density : 4.5  # density of the metal (g/cm^3), play around with this value to get variations in the metal artifact
+max_kv: 120  # maximum voltage of the x-ray tube (kVp)
+effective_kv: 70  # effective kV of the x-ray source for 120 kVp
+metal_name : 'titanium' # other metals are not supported yet, planned for future versions
+
+# Dataset parameters
+path_to_non_metal_vols: "dataset/non_metal/"
+path_to_metal_vols: "dataset/metal/"
+output_path: "dataset/simulated/"
+write_metal_vol: True # write the metal-only volume
+write_non_metal_vol: True # write the non-metal volume, can be used as a ground truth for the metal artifact reduction
+write_combined_vol: True # write the combined metal-contaminated volume
+write_combined_projections: True # write the combined metal-contaminated projections
+
+

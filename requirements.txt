@@ -1,0 +1,5 @@
+pyyaml
+skimage
+numpy
+scipy
+nibabel
