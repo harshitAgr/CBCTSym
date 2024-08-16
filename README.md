@@ -1,13 +1,11 @@
 # CBCTSym
-An implementation for generating simulated datasets for CBCT scans.
+An implementation for generating simulated datasets for CBCT scans. 
 
-# Why?
-Because, no public dataset is available for CBCT metal artifact training.
+***The work was done as a part of TomoHead project while working at Planmeca Oy, Helsinki, Finland.***
 
-# How?
 We follow the implementation provided in "Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography," by Yanbo Zhang and Hengyong Yu, 2018, which was used to generate the dataset for CT scans. However, the corresponding code was in MATLAB, and the metal dataset was not available. We will use the same approach to generate the dataset for CBCT scans using python and open source CT dataset.
 
-We will use open source CTPelvic1K Dataset dataset for non-metal images and Clinic Metal dataset to generate the metal masks. Further, we will use TIGRE toolbox to generate the metal artifact projections and fdk-reconstrcuted images.
+We will use the open sourced CTPelvic1K Dataset for non-metal images and Clinic Metal dataset to generate the metal masks. Further, we will use TIGRE toolbox to generate the metal artifact projections and fdk-reconstrcuted images.
 
 # Steps
 1. Download the non-metal CT images from [CTPelvic1K Dataset6](https://zenodo.org/records/4588403/files/CTPelvic1K_dataset6_data.tar.gz?download=1), place all the zip files under the folder dataset/deeplesion.
