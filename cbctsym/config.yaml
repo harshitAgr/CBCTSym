@@ -17,7 +17,7 @@ metal_threshold: 4000  # in HU
 metal_density : 4.5  # density of the metal (g/cm^3), play around with this value to get variations in the metal artifact
 max_kv: 120  # maximum voltage of the x-ray tube (kVp)
 effective_kv: 70  # effective kV of the x-ray source for 120 kVp
-metal_name : 'titanium' # titanium, iron, aluminum, and copper are supported
+metal_name : 'titanium' # other metals are not supported yet, planned for future versions
 
 # Dataset parameters
 path_to_non_metal_vols: "dataset/non_metal/"

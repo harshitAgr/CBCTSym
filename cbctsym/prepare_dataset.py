@@ -148,6 +148,8 @@ def parse_arguments():
 def main():
     args = parse_arguments()
     config = load_yaml(args.config)
+    if config["mode"] is not "cone":
+        raise ValueError("Only cone mode is supported for CBCT. Please raise issue of send PR if you want other modes to be supported")
     path_to_metals = config["path_to_metal_vols"]
     path_to_data = config["path_to_non_metal_vols"]
     output_path = config["output_path"]
@@ -193,7 +195,6 @@ def main():
 
     energies = np.array(range(19, 120))
 
-    # later sample metals randomly
     for i in range(n_non_metal_volumes):
         for j in range(n_metal_volumes):
             non_metal_vol = load_nifti(os.path.join(path_to_data, data[i]))
