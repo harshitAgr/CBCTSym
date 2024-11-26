@@ -57,15 +57,17 @@ The code will load the config.yaml file, which contains various parameters for t
 
 # Citation
 
-If you find this code useful, you can cite this repository:
+If you find this code useful, you can cite our related metal segmentation network:
 ```
-@misc{cbctsym,
-  author = {Agrawal, H.},
-  title = {CBCTSym: An implementation for generating simulated datasets for CBCT scans},
-  year = {2024},
-  howpublished = {Github},
-  url = {https://github.com/harshitAgr/CBCTSym}
-}
+@ARTICLE{10250444,
+  author={Agrawal, Harshit and Hietanen, Ari and Särkkä, Simo},
+  journal={IEEE Access}, 
+  title={Deep Learning Based Projection Domain Metal Segmentation for Metal Artifact Reduction in Cone Beam Computed Tomography}, 
+  year={2023},
+  volume={11},
+  number={},
+  pages={100371-100382},
+  doi={10.1109/ACCESS.2023.3314700}}
 ```
 
 Please, also consider citing the original paper:
